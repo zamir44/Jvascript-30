@@ -48,7 +48,7 @@ function displayMatches() {
         return `
         <li>
             <span class="name">${place.city}, ${stateName}</span>    
-            <span class="population">${place.population}</span>    
+            <span class="population">${erWithCommas(place.population)}</span>    
         </li>`
     }).join('');
     suggestions.innerHTML = html;
