@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DevTools</title>
+</head>
+<body>
+
+    <p onClick="makeGreen()">×BREAK×DOWN×</p>
+
+    <script>
+        const dogs = [{ name: 'Snickers', age: 2 }, { name: 'hugo', age: 8 }];
+
+        function makeGreen() {
+        const p = document.querySelector('p');
+        p.style.color = '#BADA55';
+        p.style.fontSize = '50px';
+        }
+
+        console.assert(p.classList.contains('ouch'),
+         'That is wrong!');
+
+// Regular
+
+// Interpolated
+
+// Styled
+
+// warning!
+
+// Error :|
+
+// Info
+
+// Testing
+
+// clearing
+console.clear();
+console.dir(p)
+// Viewing DOM Elements
+
+// Grouping together
+dogs.forEach(dog => {
+    console.log(`Thisi is ${dog.name}`);
+    console.log(`${dog.name} is ${dog.age} year old`)
+    console.log(`${dog.name} is ${dog.age * 7} dog years`)
+})
+// counting
+
+// timing
+    </script>
+</body>
+</html>
